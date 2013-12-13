@@ -6,7 +6,11 @@
  * @return {number} capped value
  */
 function minMax(value, min, max) {
-    value = Number(value);
+    if (typeof value !== "number") {
+        return value;
+    } else {
+        value = Number(value);
+    }
     min = Number(min);
     max = Number(max);
 

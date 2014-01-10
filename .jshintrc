@@ -1,0 +1,18 @@
+{
+    "node": true,
+    "curly": true,
+    "latedef": true,
+    "trailing": false,
+    "sub": true,
+    "eqeqeq": true,
+    "immed": true,
+    "laxbreak": true,
+    "forin": true,
+    "newcap": true,
+    "noarg": true,
+    "regexp": true,
+    "regexdash": true,
+    "undef": true,
+    "unused": true,
+    "strict": true
+}

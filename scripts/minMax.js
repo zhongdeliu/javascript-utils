@@ -6,6 +6,8 @@
  * @return {number} capped value
  */
 function minMax(value, min, max) {
+    "use strict";
+
     if (typeof value !== "number") {
         return value;
     } else {
@@ -16,3 +18,5 @@ function minMax(value, min, max) {
 
     return (value <= min) ? min : (value >= max) ? max : value;
 }
+
+module.exports = minMax;

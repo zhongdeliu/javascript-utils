@@ -2,7 +2,6 @@
 
 Snippets collection for Javascript Daily Tasks
 
-
     /**
      * Determines if a number is within [min, max] and returns it (or the capped values)
      * @param  {number} value Value to check
@@ -23,7 +22,13 @@ Snippets collection for Javascript Daily Tasks
      */
     function objectGet(obj, indexString)
 
+## Development
 
+Copy and implement `_dummy.js` files in `scripts/` and `tests/` folder.
+
+## Tests
+
+Run `mocha` in order to execute the unit tests.
 
 ## License
 

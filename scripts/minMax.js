@@ -5,18 +5,25 @@
  * @param  {number} max   Maximum value
  * @return {number} capped value
  */
-function minMax(value, min, max) {
-    "use strict";
+(function() {
+    'use strict';
 
-    if (typeof value !== "number") {
-        return value;
-    } else {
-        value = Number(value);
+    function minMax(value, min, max) {
+
+        if (typeof value !== "number") {
+            return value;
+        } else {
+            value = Number(value);
+        }
+        min = Number(min);
+        max = Number(max);
+
+        return (value <= min) ? min : (value >= max) ? max : value;
     }
-    min = Number(min);
-    max = Number(max);
 
-    return (value <= min) ? min : (value >= max) ? max : value;
-}
-
-module.exports = minMax;
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = minMax;
+    } else {
+        window.minMax = minMax;
+    }
+})();

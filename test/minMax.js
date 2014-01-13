@@ -1,5 +1,5 @@
 var assert = require("assert");
-var minMax = require("./scripts/minMax");
+var minMax = require("./../scripts/minMax");
 
 
 describe("minMax function", function() {
